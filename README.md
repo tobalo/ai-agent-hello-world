@@ -1,9 +1,8 @@
- // Start Generation Here
 ## Hello World AI Agent
 
 This guide will help you set up a simple Hello World AI agent using Python.
 
-We will be using the `phidata`[phidata.com] library to build the agent with ollama[ollama.ai] as the LLM provider.
+We will be using the [phidata](https://phidata.com) library to build the agent with [ollama](https://ollama.com) as the LLM provider.
 
 ### Setup
 
