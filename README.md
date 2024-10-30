@@ -10,28 +10,7 @@ We've provided setup scripts for both Windows and macOS/Linux to make the instal
 
 First install and run ollama locally at the following link: [ollama.com/download](https://ollama.com/download)
 
-Now setup the python environment using the following scripts:
-#### Windows
-
-1. Open PowerShell and navigate to the project directory.
-2. Run the setup script:
-```powershell
-.\setup.ps1
-```
-
-#### macOS/Linux
-
-1. Open Terminal and navigate to the project directory.
-2. Make the setup script executable:
-```bash
-chmod +x setup.sh
-```
-3. Run the setup script:
-```bash
-./setup.sh
-```
-
-### Manual Setup (if you prefer)
+### Manual Setup
 
 If you'd rather set up the environment manually, follow these steps:
 

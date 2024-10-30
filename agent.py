@@ -2,7 +2,7 @@ from phi.agent import Agent
 from phi.model.ollama import Ollama
 
 hello_world_agent = Agent(
-    model=Ollama(id="llama3")
+    model=Ollama(id="llama3"),
     description="Hello World Agent, give me a brief introduction to GenAI and Traditional AI for beginners and enthusiasts",
 )
 
