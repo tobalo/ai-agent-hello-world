@@ -36,7 +36,7 @@ pip3 install -r requirements.txt
 
 4. **Run ollama locally:**
 ```bash
-ollama run llama2
+ollama run llama3
 ```
 
 5. **Run the agent:**
