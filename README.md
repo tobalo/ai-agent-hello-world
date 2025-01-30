@@ -51,7 +51,7 @@ flowchart TB
     class MT,CT1,ET,OB tertiary
 ```
 This project uses:
-- [phidata](https://phidata.com) - A powerful framework for building AI agents
+- [Agno](https://Agno.com) - A powerful framework for building AI agents
 - [ollama](https://ollama.com) - Local LLM provider for AI capabilities
 
 ## Prerequisites
@@ -117,12 +117,12 @@ python3 agent.py
 
 Now that your AI agent is running, you can:
 - Customize its behavior and responses
-- Add new capabilities using [Phidata's toolkits](https://docs.phidata.com/tools/toolkits)
+- Add new capabilities using [Agno's toolkits](https://docs.Agno.com/tools/toolkits)
 - Experiment with different LLM models available through Ollama
 
 ## Resources
 
-- [Phidata Documentation](https://docs.phidata.com)
+- [Agno Documentation](https://docs.Agno.com)
 - [Ollama Blog](https://ollama.com/blog)
 - [Project Issues](https://github.com/yourusername/ai-agent-hello-world/issues)
 
