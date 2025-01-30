@@ -1,50 +1,122 @@
-## Hello World AI Agent
+# Hello World AI Agent
 
-This guide will help you set up a simple Hello World AI agent using Python.
+Build your first AI agent using Python! This project demonstrates how to create a simple conversational AI agent using modern tools and frameworks.
 
-We will be using the [phidata](https://phidata.com) library to build the agent with [ollama](https://ollama.com) as the LLM provider.
+## Overview
+```mermaid
+flowchart TB
+    subgraph User["User Interaction Layer"]
+        UI[User Input]
+        OR[Output Response]
+    end
 
-### Setup
+    subgraph Agent["AI Agent Core"]
+        LLM["Language Model
+        (Understanding & Generation)"]
+        CT[(Context Storage
+        - Memory & History
+        - Instructions
+        - Knowledge)]
+        TM{"Tool Manager
+        - Tool Selection
+        - Task Routing"}
+    end
 
-We've provided setup scripts for both Windows and macOS/Linux to make the installation process easier.
+    subgraph Tools["Available Tools"]
+        MT[("Storage Systems
+        - Databases
+        - Files")]
+        CT1{{Computation Tools
+        - Math & Analysis}}
+        ET>External Tools
+        - Web & APIs]
+        OB(((Observability)))
+    end
 
-First install and run ollama locally at the following link: [ollama.com/download](https://ollama.com/download)
+    UI --> LLM
+    LLM <--> CT
+    LLM <--> TM
+    TM <--> MT
+    TM <--> CT1
+    TM <--> ET
+    TM <--> OB
+    LLM --> OR
 
-### Manual Setup
+    classDef primary fill:#e1f5fe,stroke:#01579b
+    classDef secondary fill:#f3e5f5,stroke:#4a148c
+    classDef tertiary fill:#e8f5e9,stroke:#1b5e20
+    
+    class UI,OR primary
+    class LLM,CT,TM secondary
+    class MT,CT1,ET,OB tertiary
+```
+This project uses:
+- [phidata](https://phidata.com) - A powerful framework for building AI agents
+- [ollama](https://ollama.com) - Local LLM provider for AI capabilities
 
-If you'd rather set up the environment manually, follow these steps:
+## Prerequisites
 
-1. **Create a virtual environment:**
+Before you begin, ensure you have the following installed:
+- [Python 3.10+](https://www.python.org/downloads/)
+- [uv](https://astral.sh/uv) - Modern Python package installer and environment manager
+- [ollama](https://ollama.com/download) - Local LLM provider
+- Your favorite text editor (Vim, VSCode, Notepad++, Windsurf, Cursor, etc)
+
+## Installation
+
+### Quick Setup
+
+1. Download and install Ollama from [ollama.com/download](https://ollama.com/download)
+2. Install uv:
 ```bash
-python3 -m venv ./aienv
+# macOS/Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-2. **Activate the virtual environment:**
-- On Windows:
+### Project Setup
+
+1. Create a virtual environment:
 ```bash
-.\aienv\Scripts\activate
-```
-- On macOS/Linux:
-```bash
-source ./aienv/bin/activate
+uv venv
 ```
 
-3. **Install dependencies:**
+2. Activate the virtual environment:
 ```bash
-pip3 install -r requirements.txt
+# macOS/Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
 ```
 
-4. **Run ollama locally:**
+3. Install dependencies:
+```bash
+uv pip install phidata ollama
+```
+
+4. Start Ollama:
 ```bash
 ollama run llama3
 ```
 
-5. **Run the agent:**
+5. Launch the agent:
 ```bash
-source ./aienv/bin/activate
 python3 agent.py
 ```
 
-### Next Steps
+## Next Steps
 
-After running the setup script or following the manual setup, your Hello World AI agent should be up and running. You can now start interacting with it or customize it further based on your needs.
+Now that your AI agent is running, you can:
+- Customize its behavior and responses
+- Add new capabilities using [Phidata's toolkits](https://docs.phidata.com/tools/toolkits)
+- Experiment with different LLM models available through Ollama
+
+## Resources
+
+- [Phidata Documentation](https://docs.phidata.com)
+- [Ollama Blog](https://ollama.com/blog)
+- [Project Issues](https://github.com/yourusername/ai-agent-hello-world/issues)
+
