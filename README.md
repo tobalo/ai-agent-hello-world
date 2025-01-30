@@ -57,15 +57,20 @@ This project uses:
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
+- [git](https://git-scm.com/)
 - [Python 3.10+](https://www.python.org/downloads/)
 - [uv](https://astral.sh/uv) - Modern Python package installer and environment manager
 - [ollama](https://ollama.com/download) - Local LLM provider
 - Your favorite text editor (Vim, VSCode, Notepad++, Windsurf, Cursor, etc)
 
+Then run:   
+```bash
+git clone https://github.com/tobalo/ai-agent-hello-world.git
+```
+
 ## Installation
 
 ### Quick Setup
-
 1. Download and install Ollama from [ollama.com/download](https://ollama.com/download)
 2. Install uv:
 ```bash
