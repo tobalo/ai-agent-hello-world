@@ -66,6 +66,7 @@ Before you begin, ensure you have the following installed:
 Then run:   
 ```bash
 git clone https://github.com/tobalo/ai-agent-hello-world.git
+cd ai-agent-hello-world # navigate into the cloned repository
 ```
 
 ## Installation
