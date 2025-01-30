@@ -100,7 +100,7 @@ source .venv/bin/activate
 
 3. Install dependencies:
 ```bash
-uv pip install phidata ollama
+uv pip install agno ollama
 ```
 
 4. Start Ollama:
