@@ -42,9 +42,9 @@ flowchart TB
     TM <--> OB
     LLM --> OR
 
-    classDef primary fill:#e1f5fe,stroke:#01579b
-    classDef secondary fill:#f3e5f5,stroke:#4a148c
-    classDef tertiary fill:#e8f5e9,stroke:#1b5e20
+    classDef primary fill:#e1f5fe,stroke:#01579b,color:black
+    classDef secondary fill:#f3e5f5,stroke:#4a148c,color:black
+    classDef tertiary fill:#e8f5e9,stroke:#1b5e20,color:black
     
     class UI,OR primary
     class LLM,CT,TM secondary
