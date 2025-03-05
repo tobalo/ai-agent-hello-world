@@ -105,12 +105,17 @@ uv pip install agno ollama
 
 4. Start Ollama:
 ```bash
-ollama run llama3
+ollama run llama3.2:1b
 ```
 
 5. Launch the agent:
 ```bash
 python3 agent.py
+```
+
+6. Launch the web search agent:
+```bash
+python3 websearch-agent.py
 ```
 
 ## Next Steps
